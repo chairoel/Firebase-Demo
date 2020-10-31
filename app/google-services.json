@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "856076924221",
+    "firebase_url": "https://fir-demojava-3a9a9.firebaseio.com",
+    "project_id": "fir-demojava-3a9a9",
+    "storage_bucket": "fir-demojava-3a9a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856076924221:android:7411931f909892d0a2c154",
+        "android_client_info": {
+          "package_name": "com.amrul.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856076924221-e12o0o8fmrs6r3c15odgj07qdll6l70f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm0H4w5PWKarwX5TZxo0HW8nhqKqIF59Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856076924221-e12o0o8fmrs6r3c15odgj07qdll6l70f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
