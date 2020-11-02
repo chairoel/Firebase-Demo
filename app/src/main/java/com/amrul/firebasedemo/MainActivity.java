@@ -64,13 +64,15 @@ public class MainActivity extends AppCompatActivity {
         final ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.list_item, list);
         listView.setAdapter(adapter);
 
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Language");
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Information");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 list.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    list.add(snapshot.getValue().toString());
+                    Information info = snapshot.getValue(Information.class);
+                    String txt = info.getName() + " : " + info.getEmail();
+                    list.add(txt);
                 }
                 adapter.notifyDataSetChanged();
             }
